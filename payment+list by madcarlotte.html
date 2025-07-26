@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MadCarlotte Official - Pembayaran</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('https://img1.pixhost.to/images/6638/613651650_imgtmp.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+        }
+        .container {
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.7);
+            max-width: 600px;
+            margin: 50px auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+        .container:hover {
+            transform: scale(1.02);
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+        .payment-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: flex-start;
+        }
+        .payment-option {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 8px 12px;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .payment-option:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        .payment-img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+        .info-sidebar {
+            margin-top: 20px;
+            background-color: #222;
+            padding: 15px;
+            border-radius: 10px;
+            display: none;
+            text-align: left;
+            transition: opacity 0.3s ease;
+        }
+        .panel-info {
+            margin-top: 30px;
+            text-align: left;
+            background-color: #111;
+            padding: 20px;
+            border-radius: 10px;
+            white-space: pre-wrap;
+        }
+        .panel-info ul {
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+        .panel-info strong {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        .links {
+            margin-top: 30px;
+        }
+        .links a {
+            display: block;
+            margin: 5px;
+            color: #00ffcc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .links a:hover {
+            color: #00cc99;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MadCarlotte Official</h1>
+        <div class="payment-list">
+            <div class="payment-option" onclick="showInfo('qris')">
+                <img src="https://img1.pixhost.to/images/6638/613652347_imgtmp.jpg" alt="Qris" class="payment-img" />
+                <span>Qris</span>
+            </div>
+            <div class="payment-option" onclick="showInfo('dana')">
+                <img src="https://img1.pixhost.to/images/6638/613652460_imgtmp.jpg" alt="Dana" class="payment-img" />
+                <span>Dana</span>
+            </div>
+            <div class="payment-option" onclick="showInfo('gopay')">
+                <img src="https://img1.pixhost.to/images/6638/613652557_imgtmp.jpg" alt="Gopay" class="payment-img" />
+                <span>Gopay</span>
+            </div>
+            <div class="payment-option" onclick="showInfo('ovo')">
+                <img src="https://img1.pixhost.to/images/6638/613656988_imgtmp.jpg" alt="Ovo" class="payment-img" />
+                <span>Ovo</span>
+            </div>
+        </div>
+
+        <div id="info-qris" class="info-sidebar">
+            <strong>Qris:</strong>
+            <p>Scan Qris di bawah ini untuk membayar:</p>
+            <img src="https://img1.pixhost.to/images/6638/613650837_imgtmp.jpg" alt="Qris QR" style="max-width: 100%; border-radius: 10px;">
+        </div>
+
+        <div id="info-dana" class="info-sidebar">
+            <strong>Dana:</strong>
+            <p>No Dana: 083191338893</p>
+        </div>
+
+        <div id="info-gopay" class="info-sidebar">
+            <strong>Gopay:</strong>
+            <p>Gopay belum tersedia.</p>
+        </div>
+
+        <div id="info-ovo" class="info-sidebar">
+            <strong>Ovo:</strong>
+            <p>Ovo belum tersedia.</p>
+        </div>
+
+        <div class="panel-info">
+            <strong>PANEL PTERODACTYL 🦖</strong>
+            <ul>
+                <li>1GB - 1.000💸</li>
+                <li>2GB - 2.000💸</li>
+                <li>3GB - 3.000💸</li>
+                <li>4GB - 4.000💸</li>
+                <li>5GB - 5.000💸</li>
+                <li>6GB - 6.000💸</li>
+                <li>7GB - 7.000💸</li>
+                <li>8GB - 8.000💸</li>
+                <li>9GB - 9.000💸</li>
+                <li>10GB - 10.000💸</li>
+                <li>UNLIMITED (FREE SC) - 1.000💸 <em>(PROMO 20-22 JUNI)</em></li>
+            </ul>
+
+            <strong>RESSELER PANEL - 2.000💸</strong>
+
+            <strong>KEUNTUNGAN > PANEL PTERODACTYL</strong>
+            <ul>
+                <li>Panel lancar</li>
+                <li>Bot responsif</li>
+                <li>Online 24 jam</li>
+                <li>Anti del server/panel</li>
+                <li>Bergaransi</li>
+                <li>Free SC (pembelian panel unli atau paket lengkap)</li>
+                <li>Irit kuota</li>
+            </ul>
+
+            <strong>KEUNTUNGAN > RESSELER PANEL</strong>
+            <ul>
+                <li>Bisa buat panel sepuasnya</li>
+                <li>Bisa jual panel</li>
+                <li>Permanen</li>
+            </ul>
+        </div>
+
+        <div class="links">
+            <a href="https://whatsapp.com/channel/0029Vb6AHyW8KMqi6l2gBt1n" target="_blank">Saluran WhatsApp Market</a>
+            <a href="https://whatsapp.com/channel/0029VbAsjOR72WU1FTKaLm1O" target="_blank">Saluran Testimoni</a>
+            <p>Hubungi WhatsApp: <br>083191338893 / 083191731105</p>
+        </div>
+    </div>
+
+    <script>
+        function showInfo(selected) {
+            const infos = ['qris', 'dana', 'gopay', 'ovo'];
+            infos.forEach(id => {
+                const el = document.getElementById('info-' + id);
+                el.style.display = id === selected ? 'block' : 'none';
+                el.style.opacity = id === selected ? '1' : '0';
+            });
+        }
+    </script>
+</body>
+</html>
